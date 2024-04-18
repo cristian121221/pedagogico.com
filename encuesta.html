@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/encuensta.css">
+    
+  </head>
+  <body>
+    <h1 id="title">Formulario de Encuesta </h1>
+    <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar la plataforma.</p>
+      <form id="survey-form">
+        <div>
+        <label id="name-label" for="name">Nombre <input id="name" type="text" placeholder="Ingresa tu nombre" required></label>
+        </div>
+        <div>
+        <label id="email-label" for="email">Correo Electrónico <input id="email" type="email" placeholder="Ingresa tu correo electrónico" required></label>
+        </div>
+        <div>
+        <label id="number-label" for="number">Edad <span>(opcional)</span> <input id="number" placeholder="Edad" type="number" min="16" max="120"></label>
+        </div>
+        <div>
+        <p>¿Estado Civil?</p>
+        <select id="dropdown">
+        <option>Selecciona tu rol actual</option>
+        <option>casado</option>
+        <option>soltero</option>
+        <option>divorciado</option>
+        <option>viudo</option>
+        </select>
+        </div>
+        <div>
+        <p>¿ ?</p>
+        <label><input type="radio" name="user-recommend" value="definitivamente" checked> Definitivamente</label>
+        <label><input type="radio" name="user-recommend" value="quizás"> Quizás</label>
+        <label><input type="radio" name="user-recommend" value="no-seguro"> No estoy seguro</label>
+        </div>
+        <div>
+          <p>¿Cuál es tu característica favorita ?</p>
+          <select id="dropdown">
+          <option>Selecciona una opción</option>
+          <option>Desafíos</option>
+          <option>Proyectos</option>
+          <option>Comunidad</option>
+          <option>Código Abierto</option>
+        </select>
+        </div>
+        <div>
+          <p>¿Qué te gustaría ver mejorado? <span>(Marca todas las que correspondan)</span></p>
+          <label><input type="checkbox" value="proyectos-front-end"> Proyectos </label>
+          <label><input type="checkbox" value="proyectos-back-end"> Proyectos</label>
+          <label><input type="checkbox" value="visualización-de-datos"> Visualización de Datos</label>
+          <label><input type="checkbox" value="desafíos"> Desafíos</label>
+          <label><input type="checkbox" value="comunidad-de-código-abierto"> Comunidad de Código Abierto</label>
+          <label><input type="checkbox" value="salas-de-ayuda-de-gitter"> Salas de Ayuda de Gitter</label>
+          <label><input type="checkbox" value="videos"> Videos</label>
+          <label><input type="checkbox" value="encuentros-en-la-ciudad"> Encuentros en la Ciudad</label>
+          <label><input type="checkbox" value="wiki"> Wiki</label>
+          <label><input type="checkbox" value="foro"> Foro</label>
+          <label><input type="checkbox" value="cursos-adicionales"> Cursos Adicionales</label>
+        </div>
+        <div>
+          <p>¿Algún comentario o sugerencia?</p>
+          <textarea placeholder="Ingresa tu comentario aquí..." id="submit"></textarea>
+        </div>
+        <div>
+          <button id="submit" type="submit">Enviar</button>
+        </div>
+      </form>
+  </body>
+</html>
